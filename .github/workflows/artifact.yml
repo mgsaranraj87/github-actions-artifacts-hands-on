@@ -28,5 +28,8 @@ jobs:
         with:
           name: hello-artifact
           path: ./artifacts
+      - name: Display ls output
+        run: ls -ltR
+        
       - name: Read the content
         run: cat ./artifacts/hello.txt
